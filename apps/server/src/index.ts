@@ -2,7 +2,8 @@ import { Server } from 'socket.io'
 import { createServer } from 'http';
 import express from 'express';
 import { Redis } from 'ioredis';
-
+import dotenv from 'dotenv'
+dotenv.config();
 const app = express();
 
 const httpServer = createServer(app);
